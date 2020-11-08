@@ -1,271 +1,245 @@
-* {
-  box-sizing: border-box;
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN";
+  height:1644px;
+  text-align:center;
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+li {
+  list-style: none;
 }
 
 a {
   text-decoration: none;
 }
 
-.container {
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
+/* ここからCSSを書いていきましょう */
+header{
+  background-color:rgba(34,49,52,0.9);
+  height:65px;
+  width:100%;
+  position:fixed;
+  top:0;
+  z-index:10;
 }
 
-.top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(top.png);
-  background-size: cover;
-  color: white;
-  text-align: center;
+.progate{
+  margin:20px 20px 20px 40px;
+  width:124px;
+  float:left;
 }
 
-.top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 45px;
-  letter-spacing: 5px;
+.login{
+  background-color:rgba(255,255,255,0.3);
+  color:white;
+  float:right;
+  padding:20px 25px 20px 25px;
+  margin:0 50px 0 0;
+  transition:background-color .5s;
 }
 
-.top-wrapper p {
-  opacity: 0.7;
-  font-size: 16px;
-  margin-bottom: 40px;
+.login:hover{
+  background-color:rgba(255, 255, 255, 0.5);
 }
 
-.btn-wrapper {
-  text-align: center;
+.top-wrapper{
+  background-image:url(https://prog-8.com/images/html/advanced/top.png);
+  background-size:cover;
+  height:620px;
 }
 
-.btn-wrapper p {
-  margin-bottom: 20px;
+.title{
+  padding-top:180px;
+  padding-bottom:15px;
+  width:1170px;
+  margin:0 auto;
 }
 
-.signup {
-  background-color: #239b76;
+.title h1,p{
+  color:white;
+  opacity:0.7;
 }
 
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
+.title h1{
+  font-size:45px;
+  font-weight:bold;
+  letter-spacing:5px;
 }
 
-.twitter {
-  background-color: #55acee;
+.btn{
+  padding:8px 24px;
+  color:white;
+  display:inline-block;
+  opacity:0.8;
+  margin:15px 10px 15px 0;
+  border-radius:5px;
 }
 
-.btn {
-  padding: 8px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
+.btn:hover{
+  opacity:1.0;
 }
 
-.btn:hover {
-  opacity: 1;
+.new-register{
+  background-color:#239b76;
 }
 
-.fa {
-  margin-right: 5px;
+.facebook{
+  background-color:#3b5998;
 }
 
-header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34,49,52,0.9);
-  position :fixed;
-  top: 0;
-  z-index: 10;
+.twitter{
+  background-color:#55acee
 }
 
-.logo {
-  width: 124px;
-  margin-top: 20px;
+.program{
+  background-color:#f7f7f7;
+  height:500px;
+  padding-top:80px;
 }
 
-.header-left {
-  float: left;
+.program h1{
+  color:#5f5d60;
+  padding-bottom:50px;
+  font-weight:normal;
 }
 
-.header-right {
-  float: right;
-  margin-right: -25px;
+.program-contents{
+  width:1170px;
+  margin:0 auto;
 }
 
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
+.program p{
+
 }
 
-.header-right a:hover {
-  background-color: rgba(255,255,255,0.3);
+.program-content{
+  float:left;
+  width:25%;
+  position:relative;
 }
 
-.lesson-wrapper {
-  height: 580px;
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
-  text-align: center;
+.content-child{
+  width:80%;
+  margin:0 auto;
+  
 }
 
-.heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  color: #5f5d60;
+.HC-ex{
+  position:absolute;
+  top:90px;
+  left:100px;
+  opacity:1.0;
 }
 
-.heading h2 {
-  font-weight: normal;
+.HC-ex2{
+  padding-top:15px;
+  font-size:13px;
+  color:#b3aeb5;
+  opacity:1.0;
 }
 
-.lesson {
-  float: left;
-  width: 25%;
+.JQ-ex{
+ position:absolute;
+ top:90px;
+ left:125px;
+ opacity:1.0;
 }
 
-.lesson-icon {
-  position: relative;
+.JQ-ex2{
+  padding-top:15px;
+  font-size:13px;
+  color:#b3aeb5;
+  opacity:1.0;
 }
 
-.lesson-icon p {
-  position: absolute;
-  top: 37%;
-  width: 100%;
-  color: white;
+.Rb-ex{
+ position:absolute;
+ top:90px;
+ left:130px;
+ opacity:1.0;
 }
 
-.text-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 13px;
-  color: #b3aeb5;
+.Rb-ex2{
+  padding-top:15px;
+  font-size:13px;
+  color:#b3aeb5;
+  opacity:1.0;
 }
 
-.heading h3 {
-  font-weight: normal;
+.PHP-ex{
+ position:absolute;
+ top:90px;
+ left:135px;
+  opacity:1.0;
 }
 
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
-  text-align: center;
+.PHP-ex2{
+  padding-top:15px;
+  font-size:13px;
+  color:#b3aeb5;
+  opacity:1.0;
 }
 
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0px 7px #1a7940;
+.hazimari{
+  background-color:white;
 }
 
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
+.hazimari h2{
+  color:#5f5d60;
+  padding-top:80px;
 }
 
-footer img {
-  width: 125px;
+.hazimari p{
+  color:#5f5d60;
+  font-weight:bold;
+  font-size:20px;
 }
 
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
+.hazimari-btn{
+  padding-top:50px;
+  padding-bottom:80px;
 }
 
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
+.kaihatu-btn{
+  background-color:#5dca88;
+  padding:15px 40px;
+  color:white;
+  display:inline-block;
+  opacity:0.8;
+  margin:15px 10px 15px 0;
+  border-radius:5px;
+  box-shadow:0px 7px #1a7940;
 }
 
-.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
+.kaihatu-btn:active{
+  position:relative;
+  top:7px;
+  box-shadow:none;
 }
 
-.clear {
-  clear: left;
+.footer{
+  border-top:1px solid #eee;
+  font-size:12px;
 }
 
-@media all and (max-width: 1000px) {
-  .lesson {
-    width: 50%;
-    margin-bottom: 50px;
-  }
-
-  .lesson-wrapper {
-    height: 990px;
-  }
-
-  footer {
-    text-align: center;
-  }
+.foooter{
+  padding:30px 0 30px 50px;
+  text-align: left;
 }
 
-@media all and (max-width: 750px) {
-  .top-wrapper h1 {
-    font-size: 32px;
-  }
-
-  .heading h2 {
-    font-size: 20px;
-  }
+.footer-pro{
+  width:124px;
 }
 
-@media all and (max-width: 670px) {
-  .header-right {
-    display: none;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .top-wrapper .btn {
-    width: 100%;
-  }
-
-  .twitter {
-    margin-top: 10px;
-  }
-
-  .top-wrapper {
-    text-align: left;
-  }
-
-  .top-wrapper h1 {
-    font-size: 24px;
-  }
-
-  .top-wrapper p {
-    font-size: 14px;
-  }
-
-  .lesson {
-    width: 100%;
-  }
-
-  .lesson-wrapper {
-    height: 1700px;
-  }
-
-  .message-wrapper .btn {
-    width: 100%;
-  }
+.footer p{
+  color:#b3aeb5;
+  opacity:1.0;
 }
+
